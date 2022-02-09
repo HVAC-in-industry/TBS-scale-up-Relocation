@@ -1,0 +1,11 @@
+name: envDataSetEvalPy3.8
+dependencies:
+  - python=3.8
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - pip
+  - pip:
+      - scikit-learn
+      - xgboost

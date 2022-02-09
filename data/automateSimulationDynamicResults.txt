@@ -1,0 +1,8 @@
+The dynamic dataset is over 2 GB in size and therefore not included in this repository.
+If you want to use the dynamic dataset via the scripts it must be downloaded under the source given below and inserted into
+the data folder.
+
+Vogt, Marcus; Koch, Klemens; Cerdas, Felipe ; Herrmann, Christoph (2022), 
+“Assessment of scale up and relocation of technical building services for battery cell production”, 
+Mendeley Data, 
+URL: http://dx.doi.org/10.17632/hxc4k97vmp.1
