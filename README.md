@@ -1,5 +1,7 @@
 # Assessment of scale up and relocation of technical building services (TBS) for battery cell production
 
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
+
 This folder contains comprehensive static and temporal data about the energy and power demand of TBS, 
 in particular HVAC systems supplying dry rooms for battery production.
 22 locations around the world are considered and 10 size scales are available for each location. In addition, for each size scale
