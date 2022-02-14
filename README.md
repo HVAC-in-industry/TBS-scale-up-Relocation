@@ -82,6 +82,15 @@ In addition, a line plot based on the temporal energy demand of a simulation cas
 
 `images`: Folder created by `manualAnalysis.py` where plots can be stored.
 
+## HVAC system components and parameters
+
+In order to be able to better identify the data point names contained in the data sets, 
+the system diagram of the underlying HVAC system is shown in the following Figure. 
+
+![HVAC system components and scaling factor S and load scaling factor L](./images/PhysicalSystemBLBComponents.PNG "HVAC system components and scaling")
+**Figure 2:** HVAC system components and scaling with scaling factor `S` and load scaling factor `L`
+
+
 ## Detailed documentation of the available data
 
 ### Static data: `automateSimulationStaticResults.csv`
