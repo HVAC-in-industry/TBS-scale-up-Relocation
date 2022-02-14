@@ -66,7 +66,7 @@ The other **boundary parameters** to specify the dry room planning can be set as
 In addition, a line plot based on the temporal energy demand of a simulation case is shown.
 
 ## Disclaimer
-> The tree scripts made available are only an initial suggestion for the evaluation of the data set and
+> The three scripts made available are only an initial suggestion for the evaluation of the data set and
 > they are intended to simplify the work with the provided data from the user's point of view. 
 > No claim is made for completeness. On the basis of the data provided, various further  
 > in-depth evaluations are possible, such as more detailed temporal evaluations based on the 
