@@ -1,7 +1,5 @@
 # Assessment of scale up and relocation of technical building services (TBS) for battery cell production
 
-[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
-
 This folder contains comprehensive static and temporal data about the energy and power demand of TBS, 
 in particular HVAC systems supplying dry rooms for battery production.
 22 locations around the world are considered and 10 size scales are available for each location. In addition, for each size scale
@@ -17,7 +15,7 @@ The following world map shows the considered locations and abbreviations used in
 |----|--------------------|----|----------------------|----|---------------|----|-------------------|----|--------------------|
 | HB | Bremen (GER)       | OT | Ottawa (CAN)         | JK | Jarkata (IND) | BM | Beni Mellal (MAR) | CC | Christchurch (NZL) |
 | BA | Buenos Aires (ARG) | AT | Atacama Desert (CHL) | JP | Jaipur (IND)  | MS | Mexico City (MEX) | CU | Cusco (PER)        |
-| SY | Sydney (AUS)       | BJ | Beijing (CHN)        | NA | Nairobi (KEN) | LG | Lagos (NGA)       | LV | Las Vegas (USA)    |
+| SY | Sydney (AUS)       | BJ | Beijing (CHN)        | NA | Nairobi (KEN) | AC | Accra (GHA)       | LV | Las Vegas (USA)    |
 | NY | New York (USA)     |
 
 This folder is organised as follows:
@@ -28,7 +26,7 @@ dataSetTBSbatteryCellProduction
 |   energeticEvaluationsMultiOutputRegression.py
 │   manualAnalysis.py
 │   README.md
-│   License
+│   License.md
 │   environment.yml
 │
 └───data
@@ -89,7 +87,6 @@ the system diagram of the underlying HVAC system is shown in the following Figur
 
 ![HVAC system components and scaling factor S and load scaling factor L](./images/PhysicalSystemBLBComponents.PNG "HVAC system components and scaling")
 **Figure 2:** HVAC system components and scaling with scaling factor `S` and load scaling factor `L`
-
 
 ## Detailed documentation of the available data
 
