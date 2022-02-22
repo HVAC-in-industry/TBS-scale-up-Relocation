@@ -46,22 +46,11 @@ def interpolateScalingFactorAndInternalLoadsMultiOutputRegression(dfStaticResult
     evaluateResultsKFold = True
     # create datasets
     X_columnNames = ["ScalingFactorS","DryRoomHeatLoad","DryRoomMoistureLoad","OutsideRelativeHumidity","OutsideTemperatureDegrees"]
-    # Todo: try out alternative column names to increase accuracy (currently best is all inputs except rel. humidity)
-    #X_columnNames = ["ScalingFactorS", "DryRoomHeatLoad", "DryRoomMoistureLoad", "OutsideTemperatureDegrees"]
-    #X_columnNames = ["ScalingFactorS", "DryRoomHeatLoad",
-    #                 "OutsideTemperatureDegrees"]
     y_columnNames = ["electricEnergyKwh","naturalGasEnergyKwh","districtHeatingEnergyKwh"]
 
     X = dfStaticResults[X_columnNames].to_numpy()
     y = dfStaticResults[y_columnNames].to_numpy()
 
-    # with 5 inputs and trained with 100 tpot generations and populations
-    # XGBSingleOutput = make_pipeline(
-    #     StackingEstimator(estimator=ElasticNetCV(l1_ratio=0.15000000000000002, tol=0.001)),
-    #     StackingEstimator(estimator=DecisionTreeRegressor(max_depth=7, min_samples_leaf=14, min_samples_split=17)),
-    #     XGBRegressor(learning_rate=0.5, max_depth=4, min_child_weight=9, n_estimators=100, n_jobs=1,
-    #                  objective="reg:squarederror", subsample=1.0, verbosity=0)
-    # )
     XGBSingleOutput = make_pipeline(
         make_union(
             FunctionTransformer(copy),
@@ -81,10 +70,7 @@ def interpolateScalingFactorAndInternalLoadsMultiOutputRegression(dfStaticResult
     model = RegressorChain(XGBSingleOutput)
     model.fit(X, y)
     # make a prediction (in the same order as X_columnNames)
-    # Todo: Try out alternative inputs for prediction
     row = [scalingFactorS, maxWasteHeatRoomW, maxMoistureLoad, averageOutsideRelativeHumidity/100, averageOutsideTemperature]
-    #row = [scalingFactorS, maxWasteHeatRoomW, maxMoistureLoad, averageOutsideTemperature]
-    #row = [scalingFactorS, maxWasteHeatRoomW, averageOutsideTemperature]
     yhat = model.predict(np.asarray([row]))
     # organize predicted output as dictionary
     d = {}
@@ -111,12 +97,9 @@ if __name__ == "__main__":
       dfStaticResults = pd.read_csv(staticResultPath, index_col=0)
       # currently the locations "DU" and "LV" are outliers, thus exclude them:
       dfStaticResults = helperFuncs.extendStaticDF(dfStaticResults)
-      #dfStaticResults = dfStaticResults[dfStaticResults["location"] != "DU"]
-      #dfStaticResults = dfStaticResults[dfStaticResults["location"] != "LV"]
 
       ########### boundary parameters ############
-      consideredLocation = "JK" # considered available location without case number e.g. "OS"
-      averageOutsideRelativeHumidity = 0.7777662949012851 * 100
+      averageOutsideRelativeHumidity = 77.77662949012851 
       averageOutsideTemperatureDegrees = 27.769243088784297
       maxHumansInAirFlow = 3 # maximum number of humans in air flow zones in room
       maxHumansInRoom = 6 # total maximum amount of humans in room
