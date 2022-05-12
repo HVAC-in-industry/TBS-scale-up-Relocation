@@ -1,0 +1,27 @@
+cff-version: 1.0.0
+message: "If you use this software, please cite the following paper."
+preferred-citation:
+  type: article
+  authors:
+    - given-names: Marcus
+      family-names: Vogt
+      orcid: "https://orcid.org/0000-0003-1956-188X"
+    - given-names: Antal
+      family-names: "Dér"
+      orcid: "https://orcid.org/0000-0002-8689-2817"
+    - family-names: Khalid
+      given-names: Usama
+    - family-names: Cerdas
+      given-names: Felipe
+    - family-names: Herrmann
+      given-names: Christoph
+      orcid: "https://orcid.org/0000-0002-5621-1822"
+  title: >-
+    Model-based planning of technical building services and process chains for battery cell production
+  doi: 10.1016/j.jclepro.2022.131354
+  year: 2022
+  journal: Journal of Cleaner Production
+  volume: 351
+  month: 6
+  #start: 1 # First page number
+  #end: 10 # Last page number
