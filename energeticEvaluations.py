@@ -7,7 +7,7 @@ Author:      Marcus Vogt
 
 Created:     27.11.2021
 Copyright:   Chair of Sustainable Manufacturing and Life Cycle Engineering, Institute of Machine Tools and Production Technology, Technische Universität Braunschweig, Langer Kamp 19b, 38106 Braunschweig, Germany
-Licence:     MIT
+Licence:     CC BY-SA 4.0
 -------------------------------------------------------------------------------
 """
 
@@ -94,16 +94,24 @@ if __name__ == "__main__":
 
       ########### boundary parameters ############
       consideredLocation = "OS" # considered available location without case number e.g. "OS"
-      maxHumansInAirFlow = 4 # maximum number of humans in air flow zones in room
-      maxHumansInRoom = 6 # total maximum amount of humans in room
-      maxWasteHeatRoomW = 3000 # max waste heat in W
-      roomDewPointDegrees = -50 # dew point temperature in °C
-      inletDewPointDegrees = -60 # dew point temperature in °C
-      inletTemperatureDegrees = 20 # inlet temperature in °C
-      leakagesSuctionVolumeFlowM3H = 500 # volume flow in m^3/h
+      useBoundaryParameters = False
+      if useBoundaryParameters:
+          maxHumansInAirFlow = 4 # maximum number of humans in air flow zones in room
+          maxHumansInRoom = 6 # total maximum amount of humans in room
+          maxWasteHeatRoomW = 3000 # max waste heat in W
+          roomDewPointDegrees = -50 # dew point temperature in °C
+          inletDewPointDegrees = -60 # dew point temperature in °C
+          inletTemperatureDegrees = 20 # inlet temperature in °C
+          leakagesSuctionVolumeFlowM3H = 500 # volume flow in m^3/h
+      else:  # this approach can be used if the boundary conditions below are known
+          scalingFactorS = 1.1  # scaling factor calculated from necessary air flow
+          maxMoistureLoad = 0.5  # max. moisture load in kg/s
+          maxWasteHeatRoomW = 3000  # max waste heat in W
+
 
       ########### evaluations ############
-      scalingFactorS, maxMoistureLoad = boundaryParameters2scalingFactorMoistureLoad(maxHumansInAirFlow= maxHumansInAirFlow,
+      if useBoundaryParameters:
+          scalingFactorS, maxMoistureLoad = boundaryParameters2scalingFactorMoistureLoad(maxHumansInAirFlow= maxHumansInAirFlow,
                                                                                      maxHumansInRoom=maxHumansInRoom,
                                                                                      roomDewPointDegrees=roomDewPointDegrees,
                                                                                      inletDewPointDegrees=inletDewPointDegrees,

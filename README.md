@@ -26,8 +26,9 @@ dataSetTBSbatteryCellProduction
 |   energeticEvaluationsMultiOutputRegression.py
 │   manualAnalysis.py
 │   README.md
-│   License
+│   License.md
 │   environment.yml
+│   requirements.txt
 │
 └───data
 │   │   automateSimulationDynamicResults.csv
@@ -139,6 +140,27 @@ e.g. **OS-2-electricEnergyKwh**. For each simulation case per location, the dyna
 |      7207.21 |                 0.5 |                    0.5 |                48.2471 |                  33.4494 | ... |
 |      10810.8 |                 0.5 |                    0.5 |                62.5932 |                  50.3378 | ... |
 |      14414.4 |                 0.5 |                    0.5 |                81.3516 |                  67.2197 | ... |
+
+## Test this repository online
+The scripts `energeticEvaluations`, `energeticEvaluationsMultiOutputRegression` and `manualAnalysis` can be tested via Binder if you want to test the scripts online:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HVAC-in-industry/HVAC-control-schemes.git/HEAD)
+
+## Installation
+Either conda or pip virtual environment can be used for installation. 
+On Windows use the following commands for installation of the environment in the command line.
+
+Via conda:
+```
+1.) conda env create -f environment.yml
+2.) conda activate envDataSetEvalPy3.8
+```
+
+Via pip virtual environment:
+```
+1.) python -m venv envDataSetEvalPy3.8
+2.) .\envDataSetEvalPy3.8\Scripts\activate
+3.) pip install -r requirements.txt
+```
 
 ## Limitations
 

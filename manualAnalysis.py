@@ -7,7 +7,7 @@ Author:      Marcus Vogt
 
 Created:     17.11.2021
 Copyright:   Chair of Sustainable Manufacturing and Life Cycle Engineering, Institute of Machine Tools and Production Technology, Technische Universität Braunschweig, Langer Kamp 19b, 38106 Braunschweig, Germany
-Licence:     MIT
+Licence:     CC BY-SA 4.0
 -------------------------------------------------------------------------------
 
 """
