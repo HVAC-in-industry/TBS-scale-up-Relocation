@@ -141,8 +141,9 @@ e.g. **OS-2-electricEnergyKwh**. For each simulation case per location, the dyna
 |      10810.8 |                 0.5 |                    0.5 |                62.5932 |                  50.3378 | ... |
 |      14414.4 |                 0.5 |                    0.5 |                81.3516 |                  67.2197 | ... |
 
-## Test this repository online
-The scripts `energeticEvaluations`, `energeticEvaluationsMultiOutputRegression` and `manualAnalysis` can be tested via Binder if you want to test the scripts online:
+## A glance into the repository
+The scripts `energeticEvaluations`, `energeticEvaluationsMultiOutputRegression` and `manualAnalysis` can be tested via Binder 
+if you want to take a look online without setting up or installing anything:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HVAC-in-industry/HVAC-control-schemes.git/HEAD)
 
 ## Installation
