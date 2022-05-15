@@ -141,11 +141,11 @@ e.g. **OS-2-electricEnergyKwh**. For each simulation case per location, the dyna
 |      10810.8 |                 0.5 |                    0.5 |                62.5932 |                  50.3378 | ... |
 |      14414.4 |                 0.5 |                    0.5 |                81.3516 |                  67.2197 | ... |
 
-## A glance into the repository
+## A glance into this repository
 The scripts `energeticEvaluations`, `energeticEvaluationsMultiOutputRegression` and `manualAnalysis` can be tested via Binder 
 if you want to take a look online without setting up or installing anything:
 
-<a href="https://mybinder.org/v2/gh/HVAC-in-industry/HVAC-control-schemes.git/HEAD" target="_blank">
+<a href="https://mybinder.org/v2/gh/HVAC-in-industry/HVAC-control-schemes.git/HEAD" target="_blank" rel="noopener noreferrer">
     <img alt="MITLicense" src="https://mybinder.org/badge_logo.svg">
 </a>
 
@@ -166,15 +166,21 @@ On Windows use the following commands for installation of the environment in the
 
 Via conda:
 ```
-1.) conda env create -f environment.yml
-2.) conda activate envDataSetEvalPy3.8
+conda env create -f environment.yml
+```
+```
+conda activate envDataSetEvalPy3.8
 ```
 
 Via pip virtual environment:
 ```
-1.) python -m venv envDataSetEvalPy3.8
-2.) .\envDataSetEvalPy3.8\Scripts\activate
-3.) pip install -r requirements.txt
+python -m venv envDataSetEvalPy3.8
+```
+```
+.\envDataSetEvalPy3.8\Scripts\activate
+```
+```
+pip install -r requirements.txt
 ```
 
 ## Limitations
