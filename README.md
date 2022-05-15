@@ -144,7 +144,21 @@ e.g. **OS-2-electricEnergyKwh**. For each simulation case per location, the dyna
 ## A glance into the repository
 The scripts `energeticEvaluations`, `energeticEvaluationsMultiOutputRegression` and `manualAnalysis` can be tested via Binder 
 if you want to take a look online without setting up or installing anything:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HVAC-in-industry/HVAC-control-schemes.git/HEAD)
+
+<a href="https://mybinder.org/v2/gh/HVAC-in-industry/HVAC-control-schemes.git/HEAD" target="_blank">
+    <img alt="MITLicense" src="https://mybinder.org/badge_logo.svg">
+</a>
+
+## How to cite
+
+If you use this software, please cite the following paper:
+
+> Marcus Vogt, Antal Dér, Usama Khalid, Felipe Cerdas, Christoph Herrmann,
+> Model-based planning of technical building services and process chains for battery cell production,
+> Journal of Cleaner Production,
+> Volume 351,
+> 2022,
+> https://doi.org/10.1016/j.jclepro.2022.131354
 
 ## Installation
 Either conda or pip virtual environment can be used for installation. 
