@@ -1,4 +1,4 @@
-CC BY-SA 4.0
+cc-by-sa-4.0
 
 Copyright (c) 2021-2022 Chair of Sustainable Manufacturing and Life Cycle Engineering,
 Institute of Machine Tools and Production Technology, Technische Universität Braunschweig,
