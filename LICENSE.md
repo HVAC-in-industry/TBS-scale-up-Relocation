@@ -425,10 +425,3 @@ the avoidance of doubt, this paragraph does not form part of the public
 licenses.
 
 Creative Commons may be contacted at creativecommons.org.
-
-
-CC-BY-SA-4.0
-
-Copyright (c) 2021-2022 Chair of Sustainable Manufacturing and Life Cycle Engineering,
-Institute of Machine Tools and Production Technology, Technische Universität Braunschweig,
-Langer Kamp 19b, 38106 Braunschweig, Germany
