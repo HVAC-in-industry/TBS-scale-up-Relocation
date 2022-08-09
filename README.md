@@ -158,7 +158,7 @@ If you use this software, please cite the following paper:
 > Journal of Cleaner Production,
 > Volume 351,
 > 2022,
-> https://doi.org/10.1016/j.jclepro.2022.131354
+> https://doi.org/10.1016/j.jclepro.2022.133512
 
 ## Installation
 Either conda or pip virtual environment can be used for installation. 
