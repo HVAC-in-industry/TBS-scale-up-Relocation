@@ -156,7 +156,7 @@ If you use this software, please cite the following paper:
 > Marcus Vogt, Antal Dér, Usama Khalid, Felipe Cerdas, Christoph Herrmann,
 > Model-based planning of technical building services and process chains for battery cell production,
 > Journal of Cleaner Production,
-> Volume 351,
+> Volume 370,
 > 2022,
 > https://doi.org/10.1016/j.jclepro.2022.133512
 
