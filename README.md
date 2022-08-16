@@ -145,7 +145,7 @@ e.g. **OS-2-electricEnergyKwh**. For each simulation case per location, the dyna
 The scripts `energeticEvaluations`, `energeticEvaluationsMultiOutputRegression` and `manualAnalysis` can be tested via Binder 
 if you want to take a look online without setting up or installing anything:
 
-<a href="https://mybinder.org/v2/gh/HVAC-in-industry/HVAC-control-schemes.git/HEAD" target="_blank" rel="noopener noreferrer">
+<a href="https://mybinder.org/v2/gh/HVAC-in-industry/TBS-scale-up-Relocation/HEAD" target="_blank" rel="noopener noreferrer">
     <img alt="MITLicense" src="https://mybinder.org/badge_logo.svg">
 </a>
 
